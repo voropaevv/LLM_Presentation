@@ -1,0 +1,211 @@
+/* styles.css */
+
+.shower {
+    --slide-ratio: calc(16 / 9);
+}
+
+.center-text {
+    text-align: center; /* Выравниваем текст по центру */
+    font-size: 25px;
+    color: #7FD4D3;
+    display: flex; /* Используем flex-контейнер */
+    justify-content: center; /* Выравниваем по горизонтали по центру */
+    align-items: center; /* Выравниваем по вертикали по центру */
+}
+
+.back-button {
+    position: fixed;
+    bottom: 10px;
+    right: 80px;
+    
+}
+.button {
+    width: 40px;
+}
+
+.list {
+    font-size: 18px; /* Размер шрифта подписи */
+    color: #80D39B; /* Цвет текста подписи */
+    margin-top: 50px;
+    margin-left: -50px;
+}
+
+/* Стилизация кружка с номером слайда */
+.slide-number {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    border: 6px solid #80D39B; /* Контур круга */
+    color: #80D39B;
+}
+
+.smart-art {
+    display: block; /* Размещаем элементы друг под другом */
+    text-align: left;
+    margin-top: 0px;
+}
+
+.smart-art-item {
+    width: 50%;
+    padding: 0 10px; /* Добавляем отступ слева и справа для сдвига текста направо */
+    background: linear-gradient(-45deg, #5CB5C3, #4CA250); /* Градиентный фон от синего к зеленому */
+    margin-bottom: 10px;
+    margin-top: 0px;
+    border: none; /* Убираем границы */
+
+    transition: transform 0.2s; /* Добавляем плавное изменение масштаба при наведении */
+}
+
+/* При наведении мышки увеличиваем масштаб элемента */
+.smart-art-item:hover {
+    transform: scale(1.05); /* Увеличиваем масштаб на 5% */
+}
+
+.smart-art-item h3 {
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 0;
+    color: white;
+}
+
+.smart-art-item p {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: white;
+}
+
+.slide-image {
+    width: 80%; /* Устанавливаем ширину изображения на 80% слайда */
+    height: auto; /* Позволяем изображению сохранять пропорции */
+    display: block; /* Чтобы убрать возможные внешние отступы */
+    margin: 0 auto; /* Устанавливаем автоматические отступы слева и справа для размещения изображения по центру */
+}
+
+.slide-image-2 {
+    width: 100%; /* Устанавливаем ширину изображения на 100% слайда */
+    height: auto; /* Позволяем изображению сохранять пропорции */
+    display: block; /* Чтобы убрать возможные внешние отступы */
+    margin: 0 auto; /* Устанавливаем автоматические отступы слева и справа для размещения изображения по центру */
+}
+
+.slide-image-3 {
+    width: 110%; /* Устанавливаем ширину изображения на 100% слайда */
+
+    height: auto; /* Позволяем изображению сохранять пропорции */
+    display: block; /* Чтобы убрать возможные внешние отступы */
+}
+
+.slide-image-4 {
+    width: 50%; /* Устанавливаем ширину изображения на 100% слайда */
+    height: auto; /* Позволяем изображению сохранять пропорции */
+    
+}
+
+.slide-image-5 {
+    width: 70%; /* Устанавливаем ширину изображения на 100% слайда */
+    height: auto; /* Позволяем изображению сохранять пропорции */
+    
+}
+
+/* Стили для контейнера изображения и подписи */
+.slide-image-container {
+    text-align: center; /* Выравниваем текст и изображение по центру */
+    margin-top: 20px; /* Отступ между изображением и подписью */
+}
+
+/* Стили для контейнера изображения и подписи */
+.slide-image-container-2 {
+    text-align: center; /* Выравниваем текст и изображение по центру */
+    margin-top: 30px; /* Отступ между изображением и подписью */
+}
+
+/* Стили для левого и правого изображений */
+.left-image,
+.right-image {
+    width: 45%; /* Устанавливаем ширину каждого изображения */
+    display: inline-block; /* Сделать изображения строчными элементами, чтобы они находились на одной линии */
+    vertical-align: middle; /* Выравниваем по вертикали по середине */
+    margin-right: 20px; /* Добавляем отступ между изображениями */
+}
+
+/* Добавляем отступ между изображениями */
+.right-image {
+    margin-top: 20px; 
+}
+
+.image-caption {
+    font-size: 18px; /* Размер шрифта подписи */
+    color: #80D39B; /* Цвет текста подписи */
+}
+
+/* Стилизация заголовка h2 */
+#cover_main h2 {
+    margin: 100px 0 0;
+    color: transparent; /* Делаем текст заголовка невидимым */
+    text-align: center; /* Выравниваем текст по центру */
+    text-indent: 0; /* Убираем отступ в начале текста */
+    font-size: 70px;
+    background: linear-gradient(45deg, #80D39B, #95DCD5); /* Градиентный фон от зеленого к голубому */
+    -webkit-background-clip: text; /* Применяем фон только к тексту */
+    background-clip: text; /* Применяем фон только к тексту */
+    padding-right: 250px; /* Добавляем отступ слева */
+}
+
+
+/* Стилизация заголовка h2 */
+#cover_end h2 {
+    margin: 150px 0 0;
+    color: #80D39B; /* Делаем текст заголовка невидимым */
+    text-align: center; /* Выравниваем текст по центру */
+    text-indent: 0; /* Убираем отступ в начале текста */
+    font-size: 90px;
+    -webkit-background-clip: text; /* Применяем фон только к тексту */
+    background-clip: text; /* Применяем фон только к тексту */
+    padding-right: 0px; /* Добавляем отступ слева */
+    text-shadow: 6px 6px 1px rgba(0, 0, 0, 0.8); /* Добавляем тень */
+}
+
+/* Стилизация заголовка h2 */
+[id^="cover"] h2 {
+    margin: -50px 0 0;
+    color: transparent; /* Делаем текст заголовка невидимым */
+    text-align: center; /* Выравниваем текст по центру */
+    text-indent: 0; /* Убираем отступ в начале текста */
+    font-size: 70px;
+    background: linear-gradient(45deg, #80D39B, #95DCD5); /* Градиентный фон от зеленого к голубому */
+    -webkit-background-clip: text; /* Применяем фон только к тексту */
+    background-clip: text; /* Применяем фон только к тексту */
+}
+
+/* Стилизация заголовка h4 */
+[id^="cover"] h4 {
+    margin: -20px 0 0;
+    color: transparent; /* Делаем текст заголовка невидимым */
+    text-align: center; /* Выравниваем текст по центру */
+    text-indent: 0; /* Убираем отступ в начале текста */
+    font-size: 45px;
+    font-weight: lighter; /* Делаем шрифт тоньше */
+    background: linear-gradient(45deg, #80D39B, #95DCD5); /* Градиентный фон от зеленого к голубому */
+    -webkit-background-clip: text; /* Применяем фон только к тексту */
+    background-clip: text; /* Применяем фон только к тексту */
+}
+
+#cover_main p {
+    margin: 80px 0 -20px; /* Расстояние между верхним краем элемента и контентом, добавляем отступ вниз */
+    text-align: left;
+    font-size: 25px;
+    color: #7FD4D3;
+    line-height: 1.2; /*  Расстояние между строками */
+}
+
+
+/* Стилизация SmartArt-объекта на втором слайде */
+[id^="cover"] .smart-art {
+    margin-top: 50px;
+}
