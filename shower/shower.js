@@ -4,6 +4,8 @@
  * @copyright 2010–2021 Vadim Makeev, https://pepelsbey.net
  * @license MIT
  */
+
+
 (function () {
     'use strict';
 
